@@ -1,1 +1,4 @@
 asfrt9F5grEc3k$ - Heroku
+git add .
+git commit -m "Dəyişiklik barədə qısa mesaj"
+git push yeni şeylər əlavə etmək üçündü
