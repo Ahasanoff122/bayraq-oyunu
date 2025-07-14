@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Bayraq Tapmaca</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.socket.io/4.5.1/socket.io.min.js"></script>
+
+</head>
+<body>
+
+<!-- Qeydiyyat Pəncərəsi -->
+<div id="authScreen">
+  <h1>Bayraq Tapmaca</h1>
+  <p>Zəhmət olmasa daxil olun və ya qeydiyyatdan keçin:</p>
+  <input type="text" id="usernameInput" placeholder="İstifadəçi adı" />
+  <button onclick="loginUser()">Şifirlə Başla</button>
+  <div id="authError"></div>
+</div>
+
+<!-- Oyun Paneli -->
+<div id="gameScreen" style="display:none;">
+  <div class="head">
+    <header id="findflag">Bayraq Tapmaca Oyunu</header>
+    <button id="soundToggle" title="Səs aktiv/deaktiv">Səs: Aktiv</button>
+
+
+  </div>
+
+  <div class="mode-switch">
+    <button id="btnSolo">Solo Mod</button>
+    <button id="btnCompetitive">Rəqabətçi Mod</button>
+    <button id="btnMultiplayer" >Multiplayer</button>
+  </div>
+
+  <div class="flag-top">
+    <div class="scoreboard">Xal: <span id="score">0</span></div>
+    <div class="rank-display">Rütbə: <span id="rankName">Yoxdur</span></div>
+    <div id="roomInfo" style="margin: 10px 0; font-weight: bold; color: #007bff;"></div>
+
+  </div>
+
+  <div class="flag-container">
+    <img id="flag" src="" alt="Bayraq" />
+  </div>
+
+  <div class="question" id="question">Bayrağın ölkəsini seçin:</div>
+  <div class="options" id="options"></div>
+
+  <div class="extra-panels">
+    <h3>Xal Tarixi</h3>
+    <div id="scoreHistory"></div>
+  </div>
+
+  <div class="extra-panels">
+    <h3>Dünya Lider Lövhəsi (Top 5)</h3>
+    <ol id="leaderboard"></ol>
+  </div>
+
+  <footer>Hazırladı: Əli Həsənov</footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

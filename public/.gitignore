@@ -1,0 +1,22 @@
+# Node.js
+node_modules/
+.env
+npm-debug.log
+.DS_Store
+
+# VS Code
+.vscode/
+
+# Sistem faylları
+Thumbs.db
+desktop.ini
+
+# Heroku, Render və digər platformalar
+*.log
+.cache/
+build/
+dist/
+
+# Local storage/test data
+*.sqlite
+*.local.json
